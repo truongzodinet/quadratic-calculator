@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic calculator</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1>Quadratic calculator</h1>
+        </nav>
+        <div class="form">
+            <h5>function: y = ax<sup>2</sup> + bx + c</h5>
+            <input id="first_number" type="number" placeholder="First number (a)" required>
+            <input id="second_number" type="number" placeholder="Second number (b)" required>
+            <input id="third_number" type="number" placeholder="Third number (c)" required>
+            <div class="result">
+                <p id="result">This is result</p>
+            </div>
+            <button type="submit" id="btn"><img src="/assets/calculator.svg" alt="calculator_icon">Calculate</button>
+        </div>
+        <div class="ballon__circle ballon__circle_t0"></div>
+        <div class="ballon__circle ballon__circle_t1"></div>
+        <div class="ballon__circle ballon__circle_t2"></div>
+    </main>
+
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
