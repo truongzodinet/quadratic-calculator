@@ -47,12 +47,12 @@ body{
             padding: 1.25rem;
             border-radius: 1rem;
             z-index: 10;
-            background: #ecf0f3;
-            box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9;
+            background: $light_blue_gray2;
+            box-shadow: 10px 10px 10px $light_blue_gray1, -10px -10px 10px $light_gray;
             
             h5{
                 padding-bottom: 1.25rem;
-                color: #888;
+                color: $gray;
                 font-style: italic;
             }
     
@@ -66,19 +66,19 @@ body{
                 border: none;
                 outline: none;
                 font-family: "Montserrat", sans-serif;
-                background-color: #ecf0f3;
+                background-color: $light_blue_gray2;
                 transition: 0.25s ease;
                 border-radius: 8px;
-                box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+                box-shadow: inset 2px 2px 4px $light_blue_gray1, inset -2px -2px 4px $light_gray;
     
                 &:focus {
-                    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+                    box-shadow: inset 4px 4px 4px $light_blue_gray1, inset -4px -4px 4px $light_gray;
                 }
             }
             .result{
                 font-size: 0.75rem;
                 line-height: 1rem;
-                color: rgba(107, 114, 128, 0.5);
+                color: $gray;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -87,13 +87,13 @@ body{
     
             button{
                 width: 11.25rem;
-                height: 3.125rem;
+                height: 3rem;
                 border-radius: 1.5rem;
                 font-size: 0.9rem;
                 letter-spacing: 1.15px;
-                background: #ff003d;
-                color: #f9f9f9;
-                box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+                background: $red;
+                color: $light_gray;
+                box-shadow: 8px 8px 16px $light_blue_gray1, -8px -8px 16px $light_gray;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -102,7 +102,7 @@ body{
                 font-weight: 600;
                 margin-top: 1.25rem;
                 text-transform: uppercase;
-                border: 3px solid red;
+                border: 3px solid $red;
     
                 &:hover{
                     border-color: pink;
@@ -113,34 +113,28 @@ body{
 
         .ballon__circle {
             border-radius: 50%;
-            background-color: #ecf0f3;
-            box-shadow: inset 8px 8px 12px #d1d9e6, inset -8px -8px 12px #f9f9f9;
+            background-color: $light_blue_gray2;
+            box-shadow: inset 8px 8px 12px $light_blue_gray1, inset -8px -8px 12px $light_gray;
             z-index: 0;
             position: absolute;
         }
         .ballon__circle_t0{
             top: 0;
             right: 0;
-            width: 300px;
-            height: 300px;
-            //         width: 18.75rem;
-        //         height: 18.75rem;
+            width: 18.75rem;
+            height: 18.75rem;
         }
         .ballon__circle_t1{
             top: 75%;
             left: 15%;
-            width: 130px;
-            height: 130px;
-                    //         width: 18.75rem;
-        //         height: 18.75rem;
+            width: 18.75rem;
+            height: 18.75rem;
         }
         .ballon__circle_t2{
             bottom: -30%;
             left: 60%;
-            width: 80px;
-            height: 80px;
-             //         width: 5rem;
-        //         height: 5rem;
+            width: 5rem;
+            height: 5rem;
         }
     }
 }
