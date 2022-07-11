@@ -60,6 +60,8 @@ body {
         box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9; }
         body main .form input:focus {
           box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9; }
+        body main .form input::placeholder {
+          opacity: 0.7; }
       body main .form .result {
         font-size: 0.75rem;
         line-height: 1rem;
