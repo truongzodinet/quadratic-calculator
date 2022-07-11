@@ -8,6 +8,9 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+button, input{
+    outline: none;
+}
 body{
     background-image: linear-gradient(to top, #f3dadf 0%, #e3eeff 99%, #e3eeff 100%);
     text-align: center;
