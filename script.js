@@ -4,8 +4,15 @@ let third_number = document.querySelector("#third_number");
 const button = document.querySelector("#btn");
 const display = document.querySelector("#result");
 
-function getResult(a, b, c) {
-    let delta = Math.pow(b, 2) - 4*a*c;
+const reset = () =>{
+    first_number.value = "";
+    second_number.value = "";
+    third_number.value = "";
+    display.innerHTML = "";
+}
+
+const getResult = (a, b, c) => {
+    let delta = Math.pow(b, 2) - 4 * a * c;
     let result = "";
 
     if (delta < 0) {
@@ -23,5 +30,8 @@ function getResult(a, b, c) {
 button.addEventListener("click", () => {
     if (first_number.value && second_number.value && third_number.value) {
         display.innerText = 'Result: ' + getResult(parseFloat(first_number.value), parseFloat(second_number.value), parseFloat(third_number.value));
+    }
+    else{
+        alert("Please fill all fields");
     }
 });

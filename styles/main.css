@@ -5,6 +5,9 @@
   box-sizing: border-box;
   overflow: hidden; }
 
+button, input {
+  outline: none; }
+
 body {
   background-image: linear-gradient(to top, #f3dadf 0%, #e3eeff 99%, #e3eeff 100%);
   text-align: center;
@@ -69,7 +72,8 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        font-weight: 600; }
       body main .form button {
         width: 11.25rem;
         height: 3rem;
